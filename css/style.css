@@ -71,3 +71,52 @@ z-index: 1000;
 z-index: 1000;
 
 }
+
+
+
+#form #password{
+    width: 300px;
+    background-color: #292929;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 20px ;
+}
+#form .inputBox{
+    position: relative;
+}
+#text-pass{
+    display: block;
+    color: #000;
+    font-weight: 300;
+    font-style: italic;
+    padding: 5px;
+
+}
+#form.invalidation .inputBox::before{
+    position: absolute;
+    content: '';
+    right: 82px;
+    top: 82px;
+    width: 24px;
+    left: 290px;
+    height: 24px;
+    background: url("../assets/invalid.png");
+    background-size: cover;
+z-index: 1000;
+
+}
+#form.validation .inputBox::before{
+    position: absolute;
+    content: '';
+    right: 82px;
+    top: 82px;
+    width: 24px;
+    height: 24px;
+    left: 290px;
+    background: url("../assets/valid.png");
+    background-size: cover;
+z-index: 1000;
+
+}
